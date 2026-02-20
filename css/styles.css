@@ -12,12 +12,12 @@ body {
 
 header {
     background-color: #FFFFFF;
+    border-bottom: 1px solid #E7E9FC;
 }
 .page-header .container {
     display: flex;
     align-items: center;
     padding: 24px 0;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .logo {
@@ -67,6 +67,8 @@ ol {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #2E2F42;
+    display: block;
+        padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -184,8 +186,11 @@ h1 {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 8px 0 0;
 }
-
+.feat .feature-description {
+    width: 264px;
+}
 .team {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -222,6 +227,8 @@ h1 {
 
 .team-member {
     background-color: #FFFFFF;
+    width: 264px;
+    border-radius: 0 0 4px 4px
 }
 
 .team-info {
@@ -256,9 +263,14 @@ h2 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 24px;
+    row-gap: 48px 24px;
+    column-gap: 24px;
     flex-wrap: wrap;
 }
+
+.port-item {
+    width: 360px;
+}   
 .project-type {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -276,7 +288,7 @@ h2 {
 }
 .end {
     background-color: #2E2F42;
-    padding: 100px;
+    padding: 100px 0;
     display: block;
     text-align: left;
 }
@@ -289,13 +301,14 @@ h2 {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     width: 264px;
+    margin-top: 16px;
 }
 
 img {
     display: block;
 }
 
-h1, h2, h3, h4, h5, h6 p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
